@@ -6,7 +6,7 @@
 This tap is designed specifically for a custom build of NGINX with more module options.
 
 ## Modules
-|Module|Version|Description|Repository|Latest|
+|Module|Version|Description|Repository|Latest Release|
 |:--|:--|:--|:--|:--|
 |NGINX-full|`1.15.6`|NGINX core modules|:package: [nginx/nginx](https://github.com/nginx/nginx)|[![GitHub tag](https://img.shields.io/github/tag/nginx/nginx.svg)](https://github.com/nginx/nginx/releases)|
 |RTMP|`1.2.1`|NGINX-based Media Streaming Server|:package: [arut/nginx-rtmp-module](https://github.com/arut/nginx-rtmp-module)|[![GitHub tag](https://img.shields.io/github/tag/arut/nginx-rtmp-module.svg)](https://github.com/arut/nginx-rtmp-module/releases)|
