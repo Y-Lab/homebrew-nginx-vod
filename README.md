@@ -36,5 +36,5 @@ brew link nginx-vod
 ## Modules
 |Module|Description|Repository|Version|Latest Release|
 |:--|:--|:--|:--|:--|
-|NGINX-VOD|NGINX core modules|:package: [nginx/nginx](https://github.com/nginx/nginx)|`1.15.6`|[![GitHub tag](https://img.shields.io/github/tag/nginx/nginx.svg)](https://github.com/nginx/nginx/releases)|
+|NGINX-VOD|NGINX core modules with VOD support|:package: [nginx/nginx](https://github.com/nginx/nginx)|`1.15.6`|[![GitHub tag](https://img.shields.io/github/tag/nginx/nginx.svg)](https://github.com/nginx/nginx/releases)|
 |VOD|NGINX-based MP4 Repackager|:package: [kaltura/nginx-vod-module](https://github.com/kaltura/nginx-vod-module)|`1.24`|[![GitHub tag](https://img.shields.io/github/tag/kaltura/nginx-vod-module.svg)](https://github.com/kaltura/nginx-vod-module/releases)|
