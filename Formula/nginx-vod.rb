@@ -41,7 +41,6 @@ class NginxVod < Formula
       --http-scgi-temp-path=#{var}/run/nginx/scgi_temp
       --http-log-path=#{var}/log/nginx/access.log
       --error-log-path=#{var}/log/nginx/error.log
-      --with-file-aio
       --with-http_addition_module
       --with-http_auth_request_module
       --with-http_dav_module
@@ -67,7 +66,6 @@ class NginxVod < Formula
       --with-stream_realip_module
       --with-stream_ssl_module
       --with-stream_ssl_preread_module
-      --with-threads
       --add-module=#{HOMEBREW_PREFIX}/share/vod-nginx-module
     ]
 
