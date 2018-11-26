@@ -21,7 +21,7 @@ brew info nginx-full
 ```
 
 ## Conflicts
-You are free to install this version alongside a current install of NGINX from `Homebrew/homebrew` if you wish. However, they cannot be linked at the same time. To switch between them use brew's built in linking system.
+You are free to install this version alongside a current install of NGINX from `Homebrew/homebrew-core` if you wish. However, they cannot be linked at the same time. To switch between them use brew's built in linking system.
 
 ```sh
 brew unlink nginx
