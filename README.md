@@ -19,7 +19,7 @@ brew options nginx-vod
 brew info nginx-vod
 ```
 
-Once the tap is installed, you can install `nginx` with `nginx-vod-module`:
+Once the tap is installed, you can install `nginx-vod`, i.e. `nginx` with `nginx-vod-module`:
 
 ```sh
 brew install nginx-vod
@@ -34,7 +34,7 @@ brew link nginx-vod
 ```
 
 ## Modules
-|Module|Version|Description|Repository|Latest Release|
+|Module|Description|Repository|Version|Latest Release|
 |:--|:--|:--|:--|:--|
-|NGINX-VOD|`1.15.6`|NGINX core modules|:package: [nginx/nginx](https://github.com/nginx/nginx)|[![GitHub tag](https://img.shields.io/github/tag/nginx/nginx.svg)](https://github.com/nginx/nginx/releases)|
-|VOD|`1.24`|NGINX-based MP4 Repackager|:package: [kaltura/nginx-vod-module](https://github.com/kaltura/nginx-vod-module)|[![GitHub tag](https://img.shields.io/github/tag/kaltura/nginx-vod-module.svg)](https://github.com/kaltura/nginx-vod-module/releases)|
+|NGINX-VOD|NGINX core modules|:package: [nginx/nginx](https://github.com/nginx/nginx)|`1.15.6`|[![GitHub tag](https://img.shields.io/github/tag/nginx/nginx.svg)](https://github.com/nginx/nginx/releases)|
+|VOD|NGINX-based MP4 Repackager|:package: [kaltura/nginx-vod-module](https://github.com/kaltura/nginx-vod-module)|`1.24`|[![GitHub tag](https://img.shields.io/github/tag/kaltura/nginx-vod-module.svg)](https://github.com/kaltura/nginx-vod-module/releases)|
