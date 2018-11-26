@@ -11,7 +11,7 @@ class NginxVod < Formula
 
   depends_on "openssl"
   depends_on "pcre"
-  depends_on "vod-nginx-module"
+  depends_on "nginx-vod-module"
 
   def install
     # Changes default port to 8080

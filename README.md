@@ -15,14 +15,14 @@ brew tap Y-Lab/nginx
 For a list of available configuration options run:
 
 ```sh
-brew options nginx-full
-brew info nginx-full
+brew options nginx-vod
+brew info nginx-vod
 ```
 
-Once the tap is installed, you can install `nginx-full` with optional [additional modules](#modules):
+Once the tap is installed, you can install `nginx` with `nginx-vod-module`:
 
 ```sh
-brew install nginx-full --with-vod-module
+brew install nginx-vod
 ```
 
 ## Conflicts
@@ -30,13 +30,11 @@ You are free to install this version alongside a current install of NGINX from `
 
 ```sh
 brew unlink nginx
-brew link nginx-full
+brew link nginx-vod
 ```
 
 ## Modules
 |Module|Version|Description|Repository|Latest Release|
 |:--|:--|:--|:--|:--|
-|NGINX-full|`1.15.6`|NGINX core modules|:package: [nginx/nginx](https://github.com/nginx/nginx)|[![GitHub tag](https://img.shields.io/github/tag/nginx/nginx.svg)](https://github.com/nginx/nginx/releases)|
-|RTMP|`1.2.1`|NGINX-based Media Streaming Server|:package: [arut/nginx-rtmp-module](https://github.com/arut/nginx-rtmp-module)|[![GitHub tag](https://img.shields.io/github/tag/arut/nginx-rtmp-module.svg)](https://github.com/arut/nginx-rtmp-module/releases)|
-|TS|`0.1.1`|NGINX MPEG-TS Live Module|:package: [arut/nginx-ts-module](https://github.com/arut/nginx-ts-module)|[![GitHub tag](https://img.shields.io/github/tag/arut/nginx-ts-module.svg)](https://github.com/arut/nginx-ts-module/releases)|
+|NGINX-VOD|`1.15.6`|NGINX core modules|:package: [nginx/nginx](https://github.com/nginx/nginx)|[![GitHub tag](https://img.shields.io/github/tag/nginx/nginx.svg)](https://github.com/nginx/nginx/releases)|
 |VOD|`1.24`|NGINX-based MP4 Repackager|:package: [kaltura/nginx-vod-module](https://github.com/kaltura/nginx-vod-module)|[![GitHub tag](https://img.shields.io/github/tag/kaltura/nginx-vod-module.svg)](https://github.com/kaltura/nginx-vod-module/releases)|

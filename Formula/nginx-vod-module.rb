@@ -1,4 +1,4 @@
-class VodNginxModule < Formula
+class NginxVodModule < Formula
   desc "NGINX-based MP4 Repackager"
   homepage "https://github.com/kaltura/nginx-vod-module"
   url "https://github.com/kaltura/nginx-vod-module/archive/1.24.tar.gz"
