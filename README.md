@@ -6,11 +6,10 @@
 This tap is designed specifically for a custom build of NGINX with more module options.
 
 ## Installation
-Once the tap is installed, you can install nginx-full with [optional additional modules](#modules):
+You can install the tap by running the following command:
 
 ```sh
 brew tap Y-Lab/nginx
-brew install nginx-full --with-vod-module
 ```
 
 For a list of available configuration options run:
@@ -20,8 +19,14 @@ brew options nginx-full
 brew info nginx-full
 ```
 
+Once the tap is installed, you can install `nginx-full` with optional [additional modules](#modules):
+
+```sh
+brew install nginx-full --with-vod-module
+```
+
 ## Conflicts
-You are free to install this version alongside a current install of NGINX from `Homebrew/homebrew-core` if you wish. However, they cannot be linked at the same time. To switch between them use brew's built in linking system.
+You are free to install this version alongside a current install of NGINX from `Homebrew/homebrew-core` if you wish. However, they cannot be linked at the same time. To switch between them use Homebrew's built-in linking system.
 
 ```sh
 brew unlink nginx
