@@ -66,7 +66,7 @@ class NginxVod < Formula
       --with-stream_realip_module
       --with-stream_ssl_module
       --with-stream_ssl_preread_module
-      --add-module=#{HOMEBREW_PREFIX}/share/vod-nginx-module
+      --add-module=#{HOMEBREW_PREFIX}/share/nginx-vod-module
     ]
 
     if build.head?
