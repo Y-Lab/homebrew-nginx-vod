@@ -1,15 +1,15 @@
-[![Build Status](https://travis-ci.org/Y-Lab/homebrew-nginx.svg)](https://travis-ci.org/Y-Lab/homebrew-nginx)
-[![License](https://img.shields.io/github/license/Y-Lab/homebrew-nginx.svg)](https://github.com/Y-Lab/homebrew-nginx/blob/master/LICENSE)
-[![Last Commit](https://img.shields.io/github/last-commit/Y-Lab/homebrew-nginx.svg)](https://github.com/Y-Lab/homebrew-nginx/commits/master)
+[![Build Status](https://travis-ci.org/Y-Lab/homebrew-nginx-vod.svg)](https://travis-ci.org/Y-Lab/homebrew-nginx-vod)
+[![License](https://img.shields.io/github/license/Y-Lab/homebrew-nginx-vod.svg)](https://github.com/Y-Lab/homebrew-nginx-vod/blob/master/LICENSE)
+[![Last Commit](https://img.shields.io/github/last-commit/Y-Lab/homebrew-nginx-vod.svg)](https://github.com/Y-Lab/homebrew-nginx-vod/commits/master)
 
-# NGINX Homebrew Tap for Y-Lab Custom Modules
-This tap is designed specifically for a custom build of NGINX with more module options.
+# NGINX-VOD Homebrew Tap
+This tap is designed specifically for a customized build of NGINX with VOD module.
 
 ## Installation
 You can install the tap by running the following command:
 
 ```sh
-brew tap Y-Lab/nginx
+brew tap Y-Lab/nginx-vod
 ```
 
 For a list of available configuration options run:
