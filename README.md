@@ -9,7 +9,7 @@ This tap is designed specifically for a custom build of NGINX with more module o
 Once the tap is installed, you can install nginx-full with [optional additional modules](#modules):
 
 ```sh
-brew tap Y-Lab/homebrew-nginx
+brew tap Y-Lab/nginx
 brew install nginx-full --with-vod-module
 ```
 
