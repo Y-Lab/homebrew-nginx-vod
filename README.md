@@ -36,5 +36,5 @@ brew link nginx-vod
 ## Formulae
 |Formula|Forked From|Repository|Version|Latest Release|
 |:--|:--|:--|:--|:--|
-|NGINX-VOD|:gem: [Homebrew/core/Formula/nginx.rb](https://github.com/Homebrew/homebrew-core/blob/master/Formula/nginx.rb)|:package: [nginx/nginx](https://github.com/nginx/nginx)|`1.15.7`|[![GitHub tag](https://img.shields.io/github/tag/nginx/nginx.svg)](https://github.com/nginx/nginx/releases)|
-|VOD|:gem: [denji/nginx/Formula/vod-nginx-module.rb](https://github.com/denji/homebrew-nginx/blob/master/Formula/vod-nginx-module.rb)|:package: [kaltura/nginx-vod-module](https://github.com/kaltura/nginx-vod-module)|`1.24`|[![GitHub tag](https://img.shields.io/github/tag/kaltura/nginx-vod-module.svg)](https://github.com/kaltura/nginx-vod-module/releases)|
+|NGINX-VOD|:gem: [homebrew-core/nginx.rb](https://github.com/Homebrew/homebrew-core/blob/master/Formula/nginx.rb)|:package: [nginx/nginx](https://github.com/nginx/nginx)|`1.15.7`|[![GitHub tag](https://img.shields.io/github/tag/nginx/nginx.svg)](https://github.com/nginx/nginx/releases)|
+|VOD|:gem: [homebrew-nginx/vod-nginx-module.rb](https://github.com/denji/homebrew-nginx/blob/master/Formula/vod-nginx-module.rb)|:package: [kaltura/nginx-vod-module](https://github.com/kaltura/nginx-vod-module)|`1.24`|[![GitHub tag](https://img.shields.io/github/tag/kaltura/nginx-vod-module.svg)](https://github.com/kaltura/nginx-vod-module/releases)|
