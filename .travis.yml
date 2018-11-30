@@ -11,7 +11,7 @@ env:
     - HOMEBREW_DEVELOPER=1
 
 before_install:
-  - brew update
+  - brew update || brew update
   - if [ -f ".git/shallow" ]; then travis_retry git fetch --unshallow; fi
   - mkdir -p $(brew --repo)/Library/Taps/Y-Lab
   - ln -s $PWD $(brew --repo)/Library/Taps/Y-Lab/homebrew-nginx-vod
@@ -20,6 +20,7 @@ before_install:
   - ulimit -n 1024
   # Fix linux error: Incorrect file permissions (664)
   - chmod 0644 Formula/*.rb
+  # umask 022 fixes Linux `brew tests` failures
   - umask 022
 
 script:
