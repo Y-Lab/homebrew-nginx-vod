@@ -113,37 +113,39 @@ class NginxVod < Formula
   end
 
   def caveats; <<~EOS
-      Docroot is: #{var}/www
-      The default port has been set in #{etc}/nginx/nginx.conf to 8080 so that
-      nginx can run without sudo.
-      nginx will load all files in #{etc}/nginx/servers/.
-    EOS
+    Docroot is: #{var}/www
+
+    The default port has been set in #{etc}/nginx/nginx.conf to 8080 so that
+    nginx can run without sudo.
+
+    nginx will load all files in #{etc}/nginx/servers/.
+  EOS
   end
 
   plist_options :manual => "nginx"
 
   def plist; <<~EOS
-      <?xml version="1.0" encoding="UTF-8"?>
-      <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-      <plist version="1.0">
-        <dict>
-          <key>Label</key>
-          <string>#{plist_name}</string>
-          <key>RunAtLoad</key>
-          <true/>
-          <key>KeepAlive</key>
-          <false/>
-          <key>ProgramArguments</key>
-          <array>
-            <string>#{opt_bin}/nginx</string>
-            <string>-g</string>
-            <string>daemon off;</string>
-          </array>
-          <key>WorkingDirectory</key>
-          <string>#{HOMEBREW_PREFIX}</string>
-        </dict>
-      </plist>
-    EOS
+    <?xml version="1.0" encoding="UTF-8"?>
+    <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+    <plist version="1.0">
+      <dict>
+        <key>Label</key>
+        <string>#{plist_name}</string>
+        <key>RunAtLoad</key>
+        <true/>
+        <key>KeepAlive</key>
+        <false/>
+        <key>ProgramArguments</key>
+        <array>
+          <string>#{opt_bin}/nginx</string>
+          <string>-g</string>
+          <string>daemon off;</string>
+        </array>
+        <key>WorkingDirectory</key>
+        <string>#{HOMEBREW_PREFIX}</string>
+      </dict>
+    </plist>
+  EOS
   end
 
   test do
