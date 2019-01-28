@@ -3,7 +3,8 @@ language: ruby
 matrix:
   include:
     - os: osx
-      rvm: system
+      osx_image: xcode10.1
+      rvm: 2.6
   fast_finish: true
 
 env:
