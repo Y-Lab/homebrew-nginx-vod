@@ -4,7 +4,7 @@ matrix:
   include:
     - os: osx
       osx_image: xcode10.1
-      rvm: 2.6
+      rvm: system
   fast_finish: true
 
 env:
@@ -12,7 +12,8 @@ env:
     - HOMEBREW_DEVELOPER=1
 
 before_install:
-  - brew update || brew update
+  - softwareupdate --install -a
+  - travis_retry brew update
   - if [ -f ".git/shallow" ]; then travis_retry git fetch --unshallow; fi
   - mkdir -p $(brew --repo)/Library/Taps/Y-Lab
   - ln -s $PWD $(brew --repo)/Library/Taps/Y-Lab/homebrew-nginx-vod
