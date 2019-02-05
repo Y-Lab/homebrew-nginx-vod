@@ -1,15 +1,9 @@
+os: osx
+osx_image: xcode10.1
+
 language: ruby
-
-matrix:
-  include:
-    - os: osx
-      osx_image: xcode10.1
-      rvm: system
-  fast_finish: true
-
-env:
-  global:
-    - HOMEBREW_DEVELOPER=1
+rvm:
+- system
 
 before_install:
   - softwareupdate --install 'Command Line Tools (macOS High Sierra version 10.13) for Xcode'
@@ -28,7 +22,10 @@ before_install:
 script:
   - brew test-bot --no-bottle
 
-notifications:
-  email:
-    on_success: never
-    on_failure: always
+branches:
+  only:
+  - master
+
+env:
+  global:
+    - HOMEBREW_DEVELOPER=1
