@@ -1,9 +1,16 @@
-os: osx
-osx_image: xcode10.1
-
 language: ruby
-rvm:
-- system
+
+matrix:
+  include:
+    - os: osx
+      osx_image: xcode10.1
+      rvm: 2.6
+  fast_finish: true
+
+env:
+  global:
+    - HOMEBREW_DEVELOPER=1
+    - HOMEBREW_VERBOSE=1
 
 before_install:
   - softwareupdate --list
@@ -22,11 +29,3 @@ before_install:
 
 script:
   - brew test-bot --no-bottle
-
-branches:
-  only:
-  - master
-
-env:
-  global:
-    - HOMEBREW_DEVELOPER=1
