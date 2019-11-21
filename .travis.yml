@@ -3,7 +3,7 @@ osx_image: xcode11.2
 
 language: ruby
 rvm:
-  - system
+  - 2.6
 
 env:
   global:
