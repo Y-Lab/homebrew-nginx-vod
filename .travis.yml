@@ -1,11 +1,9 @@
 language: ruby
+rvm:
+  - 2.6
 
-matrix:
-  include:
-    - os: osx
-      osx_image: xcode10.1
-      rvm: 2.6
-  fast_finish: true
+os: osx
+osx_image: xcode11.2
 
 env:
   global:
@@ -14,7 +12,7 @@ env:
 
 before_install:
   - softwareupdate --list
-  - softwareupdate --install 'Command Line Tools (macOS High Sierra version 10.13) for Xcode-10.1'
+  # - softwareupdate --install 'Command Line Tools (macOS High Sierra version 10.13) for Xcode-10.1'
   - travis_retry brew update
   - if [ -f ".git/shallow" ]; then travis_retry git fetch --unshallow; fi
   - mkdir -p $(brew --repo)/Library/Taps/Y-Lab
