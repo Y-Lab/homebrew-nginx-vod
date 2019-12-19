@@ -3,27 +3,27 @@ osx_image: xcode11.2
 
 language: ruby
 rvm:
-  - 2.6
+- 2.6
 
 env:
   global:
-    - HOMEBREW_DEVELOPER=1
-    - HOMEBREW_VERBOSE=1
+  - HOMEBREW_DEVELOPER=1
+  - HOMEBREW_VERBOSE=1
 
 before_install:
-  - softwareupdate --list
-  - softwareupdate --install 'Command Line Tools (macOS Mojave version 10.14) for Xcode-10.3'
-  - travis_retry brew update
-  - if [ -f ".git/shallow" ]; then travis_retry git fetch --unshallow; fi
-  - mkdir -p $(brew --repo)/Library/Taps/Y-Lab
-  - ln -s $PWD $(brew --repo)/Library/Taps/Y-Lab/homebrew-nginx-vod
-  - cd $(brew --repo)/Library/Taps/Y-Lab/homebrew-nginx-vod
-  - export TRAVIS_BUILD_DIR="$(brew --repo)/Library/Taps/Y-Lab/homebrew-nginx-vod"
-  - ulimit -n 1024
-  # Fix linux error: Incorrect file permissions (664)
-  - chmod 0644 Formula/*.rb
-  # umask 022 fixes Linux `brew tests` failures
-  - umask 022
+- softwareupdate --list
+- softwareupdate --install 'Command Line Tools (macOS Mojave version 10.14) for Xcode-10.3'
+- travis_retry brew update
+- if [ -f ".git/shallow" ]; then travis_retry git fetch --unshallow; fi
+- mkdir -p $(brew --repo)/Library/Taps/Y-Lab
+- ln -s $PWD $(brew --repo)/Library/Taps/Y-Lab/homebrew-nginx-vod
+- cd $(brew --repo)/Library/Taps/Y-Lab/homebrew-nginx-vod
+- export TRAVIS_BUILD_DIR="$(brew --repo)/Library/Taps/Y-Lab/homebrew-nginx-vod"
+- ulimit -n 1024
+# Fix linux error: Incorrect file permissions (664)
+- chmod 0644 Formula/*.rb
+# umask 022 fixes Linux `brew tests` failures
+- umask 022
 
 script:
-  - brew test-bot --no-bottle
+- brew test-bot --no-bottle
